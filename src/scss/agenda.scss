@@ -1,0 +1,63 @@
+.agenda-page{
+    #main-container{
+        background-color: rgba($color: $blue, $alpha: 0.6);
+        color: white;
+    }
+
+    .tab-content>.tab-pane p br{
+        display: initial !important;
+    }
+}
+.nav-tabs > li > a{
+    text-align: center;
+    
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a.active{
+    background-color: $white !important;
+    color: $black;
+}
+.nav-tabs > li > a:before{
+    background-color: $white !important;
+    background: $white;
+    border: 1px solid $black;
+}
+.nav-tabs > li > a.active::before,.nav-tabs > li > a:hover::before{
+    border: 1px solid $orange;
+}
+.nav-tabs > li > a:hover{
+    border: 1px solid $black;
+}
+
+.tenpxbottom{
+ margin-bottom: 15px;
+}
+.itintabs{
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+   .time{
+       font-weight: bold;
+   }
+    .tab-content{
+        svg{
+            width: 20px;
+            height: 20px;
+            // padding-right: 5px;
+            margin-right: 3px;
+            position: relative;
+            top: 5px;
+            fill: white;
+        }
+    }
+
+    .itinactivities {
+        li{
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+}

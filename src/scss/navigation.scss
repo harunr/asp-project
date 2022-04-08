@@ -1,0 +1,158 @@
+/* Testing Code for the nav 3 logos */
+.savinlogo {
+    max-height: 85%;
+}
+
+.headerdesktop3logos {
+
+    display: block;
+}
+
+.headermobile3logos {
+
+    display: none;
+}
+
+#logo a {
+    max-width: 80%;
+}
+
+
+// Make the nav section now stay on mobile
+// for the top slider on home nav
+@media screen and (max-width:768px) {
+    .header-center-over #header {
+        position: relative;
+
+    }
+}
+
+@media screen and (max-width:575px) {
+    .tp-bullets {
+        display: none;
+    }
+
+    .headerdesktop3logos {
+
+        display: none;
+    }
+
+    .headermobile3logos {
+
+        display: block;
+
+        & #logoheader {
+            list-style-type: none;
+
+            & li img {
+                max-height: 25px;
+                min-height: 25px;
+                margin: 13px 30px 13px 30px;
+            }
+        }
+    }
+}
+
+
+
+
+/* Reduce Overall Logo Size */
+#header .toplogo {
+    max-width: 100%;
+}
+
+/* Changes for the top to not be so tall  */
+.header-center-over #logo {
+    margin-top: 27px;
+    margin-bottom: 0px;
+}
+/* Mobile Nav Header x 3 no top padding */
+@media screen and (max-width:525px) {
+    .header-center-over #logo {
+        // margin-top: 0px;
+    }
+
+}
+
+/* Mobile Logo Not To Show on Regular*/
+.mobilelogosection {
+    display: none;
+}
+
+// Mobile Styles for the logos
+@media screen and (max-width:768px) {
+
+
+
+    #header .toplogo {
+        max-width: 40%;
+        margin-bottom: 10px;
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    /* Regular Header Size */
+    #header .toplogo {
+        max-width: 70%;
+
+
+    }
+
+    /* Pull Out Menu Nav*/
+    .mobilelogosection {
+        display: list-item;
+
+        & .row {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+
+
+/* to be able to see the ricoh logos */
+#header-sticky {
+    background-color: #46AC99;
+}
+
+#header-sticky .menu>li.active>a,
+#header-sticky .menu>li>a:hover,
+#header-sticky .menu>li.sfHover>a {
+    color: white;
+}
+
+
+
+/*Background Nav Changes */
+#header {
+    background-color: rgba($color: #000000, $alpha: 0.5)
+}
+
+/* Color changes for the nav elements*/
+.menu>li>a:before {
+    background: #FFB100;
+}
+
+.menu ul li>a:hover,
+.menu ul li.sfHover>a {
+    background: #46AC99;
+}
+
+/*When scrolled down nav color changes for the gray text */
+.header-center-over #header-sticky .menu>li>a {
+    color: white;
+}
+
+/* Nav Spacing Arrow to remove on Mobile */
+.navarrowcontainer > .row{
+    margin-bottom: 0px;
+}
+
+
+// Remove some nav spacing
+.headerrowmargin{
+margin-bottom: 10px;
+}

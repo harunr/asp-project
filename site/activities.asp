@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+        <title>RFG Dealer Trip 2020</title>
+
+    <!-- FAVICON AND APPLE TOUCH -->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-180x180.png">
+    <meta name="msapplication-TileImage" content="mstile.png">
+    <meta name="msapplication-TileColor" content="#fe2f87">
+    <meta name="theme-color" content="#fe2f87">
+
+    <!-- FONTS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i%7CRaleway:400,700%7CSource+Sans+Pro:300,400,400i,600,600i,700">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- BIZHUB ICONS -->
+    <link rel="stylesheet" href="assets/fonts/bizhub-icons/css/bizhub-icons.min.css">
+
+    <!-- FANCYBOX -->
+    <link rel="stylesheet" href="assets/plugins/fancybox/jquery.fancybox.min.css">
+
+    <!-- REVOLUTION SLIDER -->
+    <link rel="stylesheet" href="assets/plugins/revolutionslider/css/settings.css">
+    <link rel="stylesheet" href="assets/plugins/revolutionslider/css/layers.css">
+    <link rel="stylesheet" href="assets/plugins/revolutionslider/css/navigation.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.min.css">
+
+    <!-- COUNTERS -->
+    <link rel="stylesheet" href="assets/plugins/counters/odometer-theme-default.min.css">
+
+    <!-- YOUTUBE PLAYER -->
+    <link rel="stylesheet" href="assets/plugins/ytplayer/css/jquery.mb.ytplayer.min.css">
+
+    <!-- BEATPICKER -->
+    <link rel="stylesheet" href="assets/plugins/beatpicker/beatpicker.min.css">
+
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="assets/plugins/animations/animate.min.css">
+
+    <!-- CUSTOM & PAGES STYLE -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/pages-style.css">
+    <!--<link href="assets/css/apollo-effect.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="assets/css/madison.css">
+    <link rel="stylesheet" href="assets/css/newcolor.css">
+    <link rel="stylesheet" href="https://codeandcore.com/ourwork/adam/italy/newcolor.css">
+
+    <meta name="google" content="notranslate">
+
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132446490-30"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132446490-30');
+    </script>
+
+</head>
+
+<body class="sticky-header header-center-over page-header-style-1 footer-style-8 preload">
+
+    <div id="main-container">
+
+        <!-- HEADER -->
+        <!-- #include file="assets/includes/navigation/nav.htm" -->
+
+
+        <!-- PAGE CONTENT -->
+
+        <!-- PAGE CONTENT -->
+        <div id="page-content" class="activities">
+
+            <div id="page-header">
+
+                <div class="ken-burns" style="background-image:url('assets/images/mpg/headers/Activities.jpg');"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <h1>Activities</h1>
+
+                            <ol class="breadcrumb">
+                                <li><a href="#">Program Overview</a></li>
+                                <li class="active">Activities</li>
+                            </ol>
+
+                        </div><!-- col -->
+                    </div><!-- row -->
+                </div><!-- container -->
+
+            </div><!-- page-header -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Your stay in Sicily will include hosted, optional activities, group outings and evening events.</p>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <ul class="filter text-center" id="firstfilter" style="margin-bottom:30px;">
+                            <li>
+                                <a class="" id="dayall" href="#" data-filter="*">All</a>
+                            </li>
+                            <li>
+                                <a href="#" id="day1" data-filter=".day1">Day 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" id="day2" data-filter=".day2">Day 2</a>
+                            </li>
+                            <li>
+                                <a href="#" id="day3" data-filter=".day3">Day 3</a>
+                            </li>
+
+                        </ul>
+                        
+
+                    </div><!-- col -->
+                </div><!-- row -->
+                <div class="row">
+                    <div class="col-md-12 noleftrightpadding" ng-app="RFG2020" ng-controller="Controller" ng-cloak>
+                        <h1 class="page-title bounceInLeft delay-2s animated bounceInLeft text-center dateeffect"></h1>
+                        <div class="isotope cols-2 mb-0 topactivity">
+                            <div class="isotope-item {{x.days}} {{x.type}}" ng-repeat="x in activities">
+                                <div class="valueitem" val="{{x.id}}">
+                                    <div class="portfolio-item">
+
+                                        <div class="portfolio-item-thumbnail">
+
+                                            <a ng-href="inneractivity.asp?id={{x.id}}" id="activity{{x.id}}">
+                                                <img ng-src="assets/images/mpg/activities/inner/{{x.id}}.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="portfolio-item-description">
+                                            <h5 class="text-center"><a ng-href="inneractivity.asp?id={{x.id}}"
+                                                    id="activity{{x.id}}" ng-bind-html="x.title"></a></h5>
+                                            <div class="mydiv" ng-cloak style="text-align:center;">
+
+                                                <span class="enh_port_subtitle timeday1"
+                                                    ng-show="x.timeday1">{{x.timeday1}}<br /></span>
+                                                <span class="enh_port_subtitle timeday2"
+                                                    ng-show="x.timeday2">{{x.timeday2}}<br /></span>
+                                                <span class="enh_port_subtitle timeday3"
+                                                    ng-show="x.timeday3">{{x.timeday3}}<br /></span>
+                                                <span class="enh_port_subtitle timeday4"
+                                                    ng-show="x.timeday4">{{x.timeday4}}<br /></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+
+
+
+
+        </div><!-- PAGE CONTENT -->
+
+        <!-- #include file="assets/includes/navigation/footer.htm" -->
+
+
+    </div><!-- MAIN CONTAINER -->
+
+
+    <!-- SCROLL UP -->
+    <a id="scroll-up" class="waves"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- jQUERY -->
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- VIEWPORT -->
+    <script src="assets/plugins/viewport/jquery.viewport.min.js"></script>
+
+    <!-- MENU -->
+    <script src="assets/plugins/menu/hoverintent.min.js"></script>
+    <script src="assets/plugins/menu/superfish.min.js"></script>
+
+    <!-- FANCYBOX -->
+    <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- REVOLUTION SLIDER  -->
+    <script src="assets/plugins/revolutionslider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/plugins/revolutionslider/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- WATERWHEEL CAROUSEL -->
+    <script src="assets/plugins/waterwheelcarousel/tweenmax.min.js"></script>
+    <script src="assets/plugins/waterwheelcarousel/jquery.waterwheelcarousel.min.js"></script>
+
+    <!-- PARALLAX -->
+    <script src="assets/plugins/parallax/jquery.stellar.min.js"></script>
+
+    <!-- ISOTOPE -->
+    <script src="assets/plugins/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- CONTACT FORM VALIDATE & SUBMIT -->
+    <script src="assets/plugins/validate/jquery.validate.min.js"></script>
+    <script src="assets/plugins/submit/jquery.form.min.js"></script>
+
+    <!-- GOOGLE MAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOKeJQI38829c2HJmmqSt6VA94jx-BBwg"></script>
+    <script src="assets/plugins/googlemaps/gmap3.min.js"></script>
+
+    <!-- CHARTS -->
+    <script src="assets/plugins/charts/jquery.easypiechart.min.js"></script>
+
+    <!-- COUNTER -->
+    <script src="assets/plugins/counters/jquery.simplecounter.min.js"></script>
+    <script src="assets/plugins/counters/odometer.min.js"></script>
+
+    <!-- STATISTICS -->
+    <script src="assets/plugins/statistics/chart.min.js"></script>
+    <script src="assets/plugins/statistics/radial-progress-bar.min.js"></script>
+
+    <!-- INSTAFEED -->
+    <script src="assets/plugins/instafeed/instafeed.min.js"></script>
+
+    <!-- TWITTER -->
+    <script src="assets/plugins/twitter/twitterfetcher.min.js"></script>
+
+    <!-- YOUTUBE PLAYER -->
+    <script src="assets/plugins/ytplayer/jquery.mb.ytplayer.min.js"></script>
+
+    <!-- COUNTDOWN -->
+    <script src="assets/plugins/countdown/jquery.countdown.min.js"></script>
+
+    <!-- BEATPICKER -->
+    <script src="assets/plugins/beatpicker/beatpicker.min.js"></script>
+
+    <!-- ANIMATIONS -->
+    <script src="assets/plugins/animations/wow.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/apollo.js"></script> -->
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-masonry.js"></script>
+    <script src="assets/js/angular-sanitize.min.js"></script>
+    <script src="controllers/controllers.js"></script>
+    <script src="assets/js/activities.js"></script>
+    <script src="assets/js/angular-filter.min.js"></script>
+
+</body>
+
+</html>

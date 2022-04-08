@@ -1,0 +1,41 @@
+.accomcontent{
+    svg {
+        width: 80px;
+        height: 80px;
+        fill: #c731ff;
+        margin-bottom: 45px;
+    }
+    #page-header{
+        margin-bottom: 0px;
+    }
+} 
+
+.accomcontent .service-box.style-3:hover svg {
+
+    fill: white;
+    
+}
+
+.accomcontent .service-box.style-3 {
+    min-height: 350px;
+}
+
+// Purpling the page
+.accomcontent .accomfirstsection {
+    background-color: #3c233c;
+.hotelinfo{
+    p{
+        color: black;
+    }
+}
+    
+    .accomtoptext {
+
+        h2,
+        p {
+            color: white;
+        }
+
+    }
+
+}

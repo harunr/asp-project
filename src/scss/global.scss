@@ -1,0 +1,63 @@
+$white:white;
+$black:black;
+$orange:orange;
+$purple:#AA2382;
+$blue:#0d1b58;
+/*Buttons Code */
+.btn-style-1:after,
+.btn-style-1:before {
+    background-color: #46AC99;
+    background: #46AC99;
+
+}
+
+#scroll-up {
+    background-color: #f296ab;
+}
+
+h2 {
+    color: #46ac99;
+    line-height: 44px;
+}
+
+// Modal Fixes
+.modal-content {
+    margin-top: 30%;
+}
+
+.notoppadding {
+    padding-top: 0px !important;
+}
+
+.notoppaddingormargin {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
+.nobottommargin {
+    margin-bottom: 0px !important;
+}
+
+.noleftrightpadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.breadcrumb {
+    display: none;
+    li.active {
+        color: #fe2f87;
+    }
+
+}
+
+#page-header{
+    margin-bottom: 30px;
+}
+.highlight{
+    background-color:yellow;
+}
+
+.headline:before {
+display:none;
+}

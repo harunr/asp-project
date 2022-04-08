@@ -1,0 +1,60 @@
+#activitycontentfailed,
+#restaurantcontentfailed {
+    visibility: hidden;
+}
+
+.topactivity {
+    background-color: #AA2382;
+
+    a,
+    .activdate {
+        color: white;
+    }
+}
+
+
+.isotope.cols-2 .isotope-item {
+    width: 50%;
+}
+
+.enh_port_subtitle {
+    color: white;
+}
+
+.activtopsection {
+    svg {
+        fill: orange;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+        margin-right: 5px;
+    }
+}
+
+.activicons {
+    svg {
+        fill: white;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+        margin-right: 5px;
+    }
+}
+
+.internalactivity {
+    svg {
+        fill: black;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+        margin-right: 5px;
+    }
+}
+
+// to turn off the 2nd selectors on page load
+#secondfilter {
+    display: none;
+}

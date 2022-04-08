@@ -1,0 +1,71 @@
+/*Graph Section BG */
+#section-tu {
+    padding: 100px 0 50px;
+    margin-top: 80px;
+    background-image: url('../../assets/images/mpg/home/whychooseusbg.jpg');
+    margin-bottom: 0px;
+}
+
+/* Home Large image Repeater Section */
+.tp-bullets.custom .tp-bullet {
+    background-color: #F296AB;
+}
+
+.tp-bullets.custom .tp-bullet.selected:before {
+    border-color: #F296AB;
+}
+
+
+/*New section below header */
+.image-box>a:after,
+.headline.style-2:before {
+    background: #FFB100;
+}
+
+.image-box .image-box-thumbnail .image-box-title a:hover {
+    color: #D00003;
+}
+
+
+/* Huge Collection of Elements */
+#section-12 {
+    background-color: #AA2382;
+
+    p>a {
+        color: black;
+    }
+}
+
+#page-content {
+    padding-bottom: 0px;
+}
+
+/* Map Section */
+.map {
+    margin-bottom: 0px;
+}
+
+.map-section {
+    &-column {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+// Change for the main page for ipad
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+    .home-text {
+        // margin-top: -370px;
+        left: 50%;
+        margin-left: 0px;
+
+    }
+}
+
+.home-top-section{
+    margin-top: 0px !important;
+}
+
+.rev_slider_wrapper{
+    margin-bottom: 0px;
+}

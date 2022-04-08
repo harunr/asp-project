@@ -1,0 +1,26 @@
+.generalinfo {
+ 
+
+    .accordion-title i {
+        margin-right: 5px;
+    }
+
+    .langtable {}
+
+    .accordion-body {
+        text-align: left;
+    }
+
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+        position: relative;
+        top: 5px;
+
+    }
+
+    .accordion-title a:hover svg {
+        fill: #AA2382;
+    }
+}
